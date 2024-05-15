@@ -3,21 +3,42 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    
   }
   
   .calculator {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 250px;
+    border: 3px solid #14a7cc;
+    border-radius: 15px; 
+    padding: 20px;
+    width: 260px;
     text-align: center;
   }
   
   .keys button {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    width: 52px;
+    height: 52px;
+    margin: 4px;
     font-size: 20px;
+    border-radius: 15px;
   }
   
+  #display{
+    border: 10px solid #14a7cc;
+    background-color: #14a7cc;
+    border-radius: 15px;
+    height: 50px;
+    width: 220px;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 8px 0px 8px 0px;
+  }
+  .keys button:hover {
+    width: 52px;
+    height: 52px;
+    margin: 4px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #14a7cc;
+    color: white;
+    border: 3px solid #a3a2a2;
+  }
