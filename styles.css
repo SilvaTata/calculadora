@@ -1,49 +1,41 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-  }
-  
-  .calculator {
-    border: 1px solid #141313;
-    border-radius: 30px; 
-    padding: 60px 0px 35px 0px;
-    width: 250px;
-    text-align: center;
-    background-color: #373434 ;
-  }
-  
-  .keys button {
-    width: 52px;
-    height: 52px;
-    margin: 1px;
-    font-size: 20px;
-    border-radius: 30px;
-    background-color: #d6d1d1fb;
-  }
-  #simbolo {
-    background-color: rgba(255, 127, 2, 0.75);
-  }
-  
-  #display{
-    border: 0px solid #000000;
-    background-color: #373434;
-    border-radius: 2px;
-    height: 70px;
-    width: 200px;
-    font-size: 3rem;
-    text-align: right;
-    color: #fff;
-    border
+:root {
+	--color-orange: #ff9f0a;
+}
 
-  }
-  .keys button:hover {
-    width: 52px;
-    height: 52px;
-    margin: 1px;
-    font-size: 20px;
-    border-radius: 30px;
-    background-color: white;
-  }
+body {
+  font-family: 'Courier New', Courier, monospace;
+	/*serve pra posicionar um elemento dentro do container*/
+	display: flex;
+	/* posicionamento horizontal do conteúdo */
+	justify-content: center;
+	/* posicionar elemento verticalmente */
+	align-items: center;
+	/* Altura do body (vh-viewHeight "tela") */
+	height: 100vh;
+  margin: unset;
+  font-weight: 400;
+}
+
+.calculadora {
+  background-color: rgb(26, 26, 26);
+	border-width: 5px;
+  /* arredondar as extremidades do elemento */
+	border-radius: 20px;
+  /* espaçamento interno  */
+	padding: 8px;
+  border-image: initial;
+  border-style: solid;
+  
+}
+
+.botoes {
+  display: block;
+  
+}
+
+.botoes button {
+  width: 80px;
+  flex-direction: column;
+  height: 70px;
+
+}
