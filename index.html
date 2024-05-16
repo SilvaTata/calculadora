@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="calculadora">
+			<div class="resultados">
+				<span id="calculo"></span>
+				<input class="input" id="input" placeholder="0" />
+			</div>
+
+			<div class="teclas">
+				<button onclick="clearDisplay()" class="limpar">AC</button>
+				<button onclick="limpar()">←</button>
+				<button onclick="inverter()">+/-</button>
+				<button onclick="setOperator('/')" class="operador">÷</button>
+				<button onclick="appendNumber('7')" class="digito">7</button>
+				<button onclick="appendNumber('8')" class="digito">8</button>
+				<button onclick="appendNumber('9')" class="digito">9</button>
+				<button onclick="setOperator('*')" class="operador">*</button>
+				<button onclick="appendNumber('4')" class="digito">4</button>
+				<button onclick="appendNumber('5')" class="digito">5</button>
+				<button onclick="appendNumber('6')" class="digito">6</button>
+				<button onclick="setOperator('-')" class="operador">-</button>
+				<button onclick="appendNumber('3')" class="digito">3</button>
+				<button onclick="appendNumber('2')" class="digito">2</button>
+				<button onclick="appendNumber('1')" class="digito">1</button>
+				<button onclick="setOperator('+')" class="operador">+</button>
+				<button onclick="appendNumber('0')" class="digito" id="zero">0</button>
+				<button onclick="appendNumber(',')" class="digito">,</button>
+				<button onclick="calculate()" class="operador">=</button>
+			</div>
+		</div>
+		<script src="script.js" />
+	</body>
+</html>
